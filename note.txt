@@ -1,1 +1,45 @@
-Hello World!
+Bonnes pratiques 
+
+Ce qu'il faut dans un dossier projet source script :
+    README.md
+    .gitignoredz
+
+
+Cmde en terminal :
+    python -m venv .venv  #créer un environnement virtuel python (.venv étant le nom à donner à l'environnement)
+    source .venv/bin/activate.fish #entrer dans l'env virtuel sur MAC
+    .venv/Script/activate.fish #entrer dans l'env virt
+    pip freeze #lister tous ce qui est installés dans l'environnement
+    pip install numpy matplotlib #installation de bibliothèques python
+
+
+Ce qu'il faut dans un README :
+    # installation
+    ** Virtual environnement**
+    ```
+    bash
+    python -m venv .venv
+    ```
+
+    .venv is the name of the env
+
+    **Connect to the venv**
+
+    -mac/Linux
+    source .venv/bin/activate.fish
+    -win
+    .venv/Scripts/activate or .venv/Scripts/activate.ps1
+
+    **create requirements.txt from pip**
+    `pip freeze > requirements.txt`
+
+    In a new environnement install the librairies
+    **install librairies**
+    `pip install -r requirements.txt`
+
+    **quit venv**
+    `deactivate`
+    ne supprimer jamais un envirannement virtuel sans l'avoir désactiver
+
+    
+
